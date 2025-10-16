@@ -1,4 +1,4 @@
-$users = Import-Excel -Path "D:\Users\george.surridge\Downloads\tonecontacts.xlsx"
+$users = Import-Excel -Path "D:\Users\george.surridge\Downloads\contacts.xlsx"
 foreach ($user in $users) {
     # Check if the mail contact already exists
     $existing = Get-MailContact -Filter "ExternalEmailAddress -eq '$($user.Email)'" -ErrorAction SilentlyContinue
