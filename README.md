@@ -28,14 +28,15 @@ Before running the script, ensure you have:
 
 ## Excel File Format
 
-The Excel file (users.xlsx) should be structured with at least one column named Email:
+The Excel file (`users.xlsx`) should be structured with at least one column named `Email`:
 
 
-        |A|
-    |1|Email
-    |2|user1@example.com
-    |3|user2@example.com
-    |4|user3@example.com
+ | Email |
+|--------|
+| user1@example.com |
+| user2@example.com |
+| user3@example.com |
+
 You can store this file anywhere, but be sure to update the file path in the script accordingly.
 
 ---
@@ -47,10 +48,10 @@ The script currently defines:
 $users = Import-Excel -Path "D:\Users\george.surridge\Downloads\contacts.xlsx"
 $group = "distgroup@example.com"
 ```
-- `$users` — The path to your Excel file containing contact email addresses.
-- `$group` — The email address of the distribution group you want to add users to.
+- **`$users`** — The path to your Excel file containing user email addresses.  
+- **`$group`** — The email address of the distribution group you want to add users to.
 
-    Modify these values before running the script.
+Modify these values before running the script.
 
 ---
 
