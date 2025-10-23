@@ -28,7 +28,7 @@ Before running the script, ensure you have:
 
 ## Excel File Format
 
-The Excel file (`users.xlsx`) should be structured with at least one column named `Email`:
+The Excel file (`contacts.xlsx`) should be structured with at least one column named `Email`:
 
 
  | Email |
